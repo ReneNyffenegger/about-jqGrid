@@ -1,3 +1,6 @@
 [submodule "jqGrid"]
 	path = jqGrid
 	url = https://github.com/tonytomov/jqGrid
+[submodule "perl-tcp"]
+	path = perl-tcp
+	url = https://github.com/ReneNyffenegger/perl-tcp

@@ -3,14 +3,14 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <title>addRowData test</title>
- 
-<link rel="stylesheet" type="text/css" media="screen" href="http://code.jquery.com/ui/1.9.1/themes/ui-lightness/jquery-ui.css" />
-<link rel="stylesheet" type="text/css" media="screen" href="jqGrid/css/ui.jqgrid.css"                                          />
- 
-<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-<script src="jqGrid/js/i18n/grid.locale-en.js"            type="text/javascript"></script>
-<script src="jqGrid/js/jquery.jqGrid.js"                  type="text/javascript"></script>
- 
+
+<link rel="stylesheet" type="text/css" media="screen" href="jquery-ui.css"            />
+<link rel="stylesheet" type="text/css" media="screen" href="jqGrid/css/ui.jqgrid.css" />
+
+<script src="jquery-latest.min.js"             type="text/javascript"></script>
+<script src="jqGrid/js/i18n/grid.locale-en.js" type="text/javascript"></script>
+<script src="jqGrid/js/jquery.jqGrid.js"       type="text/javascript"></script>
+
 <script type="text/javascript">
 $(function () {
     $("#grid").jqGrid({
@@ -24,7 +24,7 @@ $(function () {
             { name: "baz" , width: 80, sortable:  false  }
         ],
         pager: "#pager"
-    }); 
+    });
 
       var data = [
         {foo:"1", bar: 20, baz: "bla"        },
@@ -40,13 +40,12 @@ $(function () {
         jQuery("#grid").jqGrid('addRowData', i+1, data[i]);
      }
 
-}); 
+});
 </script>
- 
 </head>
 <body>
-    <table id="grid"><tr><td></td></tr></table> 
-    <div id="pager"></div> 
+    <table id="grid"><tr><td></td></tr></table>
+    <div id="pager"></div>
 </body>
 </html>
 
