@@ -1,7 +1,5 @@
-about-jqGrid
-============
+# about-jqGrid
 
-about jqGrid
 
     git submodule update --init
     perl fetch_required_files.pl
