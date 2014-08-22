@@ -6,7 +6,7 @@
 
 -----
 
-[`fetch_required_files.pl`](https://github.com/ReneNyffenegger/about-jqGrid/blob/master/fetch_required_files.pl) is a Perl script that fetches `jquery-latest.min.js` and
+[`fetch_prerequisites.pl`](https://github.com/ReneNyffenegger/about-jqGrid/blob/master/fetch_prerequisites.pl) is a Perl script that fetches `jquery-latest.min.js` and
 `jquery-ui.css` (currently for the lightness theme).
 
 
