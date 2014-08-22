@@ -19,3 +19,5 @@ to feed jqGrid with data from it. It listens on port 2808.
 
 [`json_http_request.html`](https://github.com/ReneNyffenegger/about-jqGrid/blob/master/json_http_request.html) retrieves json data (from the WebServer) and populates
 a jqGrid.
+
+[`cdn.html`](https://github.com/ReneNyffenegger/about-jqGrid/blob/master/cdn.html) uses Content Delivery Networks (CDNs) for the required Javascript and CSS files.
