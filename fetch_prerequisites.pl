@@ -1,13 +1,8 @@
 use warnings;
 use strict;
 
-use File::Fetch;
+use LWP::Simple;
 
-fetch('http://code.jquery.com/ui/1.9.1/themes/ui-lightness/jquery-ui.css');
-fetch('http://code.jquery.com/jquery-latest.min.js'                      );
-
-sub fetch { # {{{
-    my $uri     = shift;
-    my $fetcher = new File::Fetch(uri=>$uri);
-    $fetcher->fetch;
-} # }}}
+getstore('http://code.jquery.com/ui/1.9.1/themes/ui-lightness/jquery-ui.css', 'prerequisites/jquery-ui.css'       );
+getstore('http://code.jquery.com/jquery-latest.min.js'                      , 'prerequisites/jquery-latest.min.js');
+getstore('https://raw.githubusercontent.com/allmarkedup/purl/master/purl.js', 'prerequisites/purl.js'             ); # Purl: A JavaScript URL parser
