@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <title>jqGrid: custom formatters with links</title>
+  
+  <link rel="stylesheet" type="text/css" media="screen" href="prerequisites/jquery-ui.css"            />
+  <link rel="stylesheet" type="text/css" media="screen" href="jqGrid/css/ui.jqgrid.css" />
+  
+  <script src="prerequisites/jquery-latest.min.js" type="text/javascript"></script>
+  <script src="jqGrid/js/i18n/grid.locale-en.js"   type="text/javascript"></script>
+  <script src="jqGrid/js/jquery.jqGrid.js"         type="text/javascript"></script>
+  
+  <script type="text/javascript">
+
+    function custom_formatter_links(cellValue, options, rowdata) {
+      return '<a href="custom_formatter_links_target.html?id=' + rowdata.foo + '">' + cellValue + '</a>';
+    }
+
+    $(function () {
+
+        $("#grid").jqGrid({
+            caption    : "addRowData test",
+            datatype   : "local",
+            height     :  250,
+            colNames: ["The foo", "the bar", "and the baz"],
+            colModel: [
+                { name: "foo" , width: 55                    , formatter:custom_formatter_links},
+                { name: "bar" , width: 90, align   : "right" },
+                { name: "baz" , width: 80, sortable:  false  },
+            ],
+            pager: "#pager"
+        });
+    
+          var data = [
+            {foo:"one"  , bar: 20, baz: "bla"        },
+            {foo:"two"  , bar: 30, baz: "more bla"   },
+            {foo:"three", bar: 40, baz: "then what"  },
+            {foo:"four" , bar: 50, baz: "what now"   },
+            {foo:"five" , bar: 60, baz: "bla bla bla"},
+            {foo:"six"  , bar: 70, baz: "the end"    }
+          ];
+    
+         for(var i=0; i<=data.length; i++) {
+            jQuery("#grid").jqGrid('addRowData', i+1, data[i]);
+         }
+    
+    });
+
+  </script>
+
+</head>
+<body>
+    <table id="grid"><tr><td></td></tr></table>
+    <div id="pager"></div>
+
+</body>
+</html>
