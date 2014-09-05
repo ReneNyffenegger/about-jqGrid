@@ -24,3 +24,8 @@ a jqGrid.
 
 [`WebServer.pl`](https://github.com/ReneNyffenegger/about-jqGrid/blob/master/WebServer.pl) is a Web Server (using [perl-tcp](https://github.com/ReneNyffenegger/perl-tcp)) in order
 to feed jqGrid with data from it. It listens on port 2808. This Webserver is used in conjunction with `json_http_request.html`.
+
+[`custom_formatter_rows.html`](https://github.com/ReneNyffenegger/about-jqGrid/blob/master/custom_formatter_rows.html) colors rows containing *bla* red.
+
+[`custom_formatter_rows_add_rows.html`](https://github.com/ReneNyffenegger/about-jqGrid/blob/master/custom_formatter_rows_add_rows.html) same thing as `custom_formatter_rows.html` but
+uses *local* datatype.
