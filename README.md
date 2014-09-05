@@ -15,7 +15,7 @@
 
 [`cdn.html`](https://github.com/ReneNyffenegger/about-jqGrid/blob/master/cdn.html) uses Content Delivery Networks (CDNs) for the required Javascript and CSS files.
 
-[`custom_formatter_links.html`](https://github.com/ReneNyffenegger/about-jqGrid/blob/master/custom_formatter_links.html) is an exaple that demonstrates how to convert
+[`custom_formatter_links.html`](https://github.com/ReneNyffenegger/about-jqGrid/blob/master/custom_formatter_links.html) is an example that demonstrates how to convert
 a cell into a `<a href=...` link. The target (the `href`) of this link 
 [`custom_formatter_links_target.html`](https://github.com/ReneNyffenegger/about-jqGrid/blob/master/custom_formatter_links_target.html).
 
