@@ -20,6 +20,9 @@ sub request { # {{{
       when ('/json_http_request') {
         json_http_request($req);
       }
+      when ('/custom_formatter_rows') {
+        json_http_request($req);
+      }
       default {
         $req->answer_file("./" . $req->path);
       }
